@@ -1,5 +1,5 @@
-const { DataTypes, Model, Sequelize } = require("sequelize");
-const sequelize = require("../config/database");
+const { DataTypes, Model } = require('sequelize');
+const sequelize = require('../config/database');
 
 class Products extends Model {}
 
@@ -36,10 +36,10 @@ Products.init(
   {
     sequelize,
     underscored: true,
-    modelName: "Products",
-    tableName: "products",
+    modelName: 'Products',
+    tableName: 'products',
     timestamps: false,
-  }
+  },
 );
 // Association for users to user-events
 // User.belongsToMany(Events, {
